@@ -11,5 +11,5 @@ public class Luci implements Observer{
         System.out.println(name + "accensione luce garzie a  " + message);
     }
     
-    
+
 }
