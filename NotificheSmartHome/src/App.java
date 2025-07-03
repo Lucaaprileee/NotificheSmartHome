@@ -3,10 +3,12 @@ public class App {
         AppleSensor appleSensor = new AppleSensor();
 
 
-        Luci luce1 = new Luci("luci camera = ");
+        Luci luce1 = (new Luci("luci1"));
+        AdattatoreLuci luceAdattata = new AdattatoreLuci(luce1);
+
         Allarme allarme1 = new Allarme("allarme casa = ");
 
-        appleSensor.addObserver(luce1);
+        appleSensor.addObserver(luceAdattata);
         appleSensor.addObserver(allarme1);
 
 

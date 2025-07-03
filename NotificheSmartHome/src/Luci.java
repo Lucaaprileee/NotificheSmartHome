@@ -1,13 +1,12 @@
-public class Luci implements Observer{
+public class Luci{
 
     private String name;
 
     public Luci(String name){
         this.name = name;
     }
-
-    @Override
-    public void update(String message) {
+    
+    public void aggiornamento(String message) {
         System.out.println(name + "accensione luce garzie a  " + message);
     }
     
