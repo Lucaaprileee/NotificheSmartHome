@@ -27,7 +27,7 @@ public class AppleSensor implements AppleDevice{
     public void changeState(String newState) {
         this.state = newState;
         System.out.println("Sensore apple: lo stato è cambiato a " + newState);
-        notifyObserver("Stato cambaito a " + newState);
+        notifyObserver(newState);
     }
 
 }
